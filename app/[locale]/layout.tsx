@@ -7,10 +7,10 @@ import Footer from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://viapluma.christianecg.com"),
+  metadataBase: new URL("https://loft.christianecg.com"),
   title: {
-    default: "Via Pluma",
-    template: "%s · Via Pluma",
+    default: "Loft",
+    template: "%s · Loft",
   },
   description:
     "A Standard for the Transmission of IP Datagrams on Avian Carriers. Reference implementation.",
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     apple: "/icon.svg",
   },
   openGraph: {
-    siteName: "Via Pluma",
-    images: [{ url: "/api/og", width: 1200, height: 630, alt: "Via Pluma" }],
+    siteName: "Loft",
+    images: [{ url: "/api/og", width: 1200, height: 630, alt: "Loft" }],
   },
   twitter: {
     card: "summary_large_image",

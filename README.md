@@ -106,11 +106,11 @@ A minimal systemd unit:
 
 ```ini
 [Unit]
-Description=Via Pluma
+Description=Loft
 After=network.target
 
 [Service]
-WorkingDirectory=/opt/viapluma
+WorkingDirectory=/opt/loft
 ExecStart=/usr/bin/node .next/standalone/server.js
 Restart=always
 Environment=NODE_ENV=production PORT=3000

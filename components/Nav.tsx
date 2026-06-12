@@ -30,7 +30,7 @@ export default function Nav() {
       >
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/icon.svg" alt="" width={24} height={24} className="rounded" />
-        <span className="tracking-wide">Via Pluma</span>
+        <span className="tracking-wide">Loft</span>
       </Link>
       <div className="flex items-center gap-6 text-sm text-[var(--muted)]">
         <Link href="/docs" className="hover:text-[var(--foreground)] transition-colors">

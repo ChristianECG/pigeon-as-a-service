@@ -5,7 +5,7 @@ export const runtime = "edge";
 
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
-  const title = searchParams.get("title") ?? "Via Pluma";
+  const title = searchParams.get("title") ?? "Loft";
   const subtitle =
     searchParams.get("subtitle") ??
     "A Standard for the Transmission of IP Datagrams on Avian Carriers";
@@ -119,7 +119,7 @@ export async function GET(req: NextRequest) {
                 background: "#8b5cf6",
               }}
             />
-            Via Pluma
+            Loft
           </div>
         </div>
       </div>
