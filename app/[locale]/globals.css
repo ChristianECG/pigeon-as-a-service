@@ -41,3 +41,24 @@ a {
   background: var(--accent);
   color: #fff;
 }
+
+@keyframes ticker-scroll {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50%); }
+}
+
+.animate-ticker {
+  animation: ticker-scroll 22s linear infinite;
+}
+
+@keyframes radar-ring {
+  0%   { transform: scale(0.15); opacity: 0.6; }
+  100% { transform: scale(1);    opacity: 0; }
+}
+
+.radar-ring {
+  animation: radar-ring 3s ease-out infinite;
+  transform-origin: center;
+}
+.radar-ring-2 { animation-delay: 1s; }
+.radar-ring-3 { animation-delay: 2s; }

@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { Fraunces } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  display: "swap",
+});
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
@@ -43,7 +50,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={fraunces.variable}>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="min-h-screen flex flex-col">
