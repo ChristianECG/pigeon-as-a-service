@@ -2,6 +2,7 @@
   "nav": {
     "home": "Inicio",
     "docs": "RFCs",
+    "lofts": "Palomares",
     "myLoft": "Mi Palomar"
   },
   "landing": {
@@ -133,6 +134,10 @@
     "description": "El portador llegó al palomar de destino, pero no se encontró ningún datagrama. El recurso solicitado no existe o nunca fue transmitido.",
     "section": "§7 — Caché Negativo y Semántica de SERVFAIL",
     "back": "Volver al palomar principal"
+  },
+  "lofts": {
+    "title": "Directorio de Palomares",
+    "loftsDiscovered": "palomares descubiertos"
   },
   "footer": {
     "draft": "draft-cruzgonzalez-ipoac-dns",

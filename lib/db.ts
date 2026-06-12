@@ -113,6 +113,11 @@ export const db = {
         | LoftRow
         | undefined;
     },
+    all(): LoftRow[] {
+      return getDb()
+        .prepare("SELECT * FROM lofts ORDER BY created_at DESC")
+        .all() as LoftRow[];
+    },
   },
   messages: {
     create(msg: Omit<MessageRow, "delivered_at">): MessageRow {

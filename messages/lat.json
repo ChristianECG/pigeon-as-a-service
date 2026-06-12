@@ -2,6 +2,7 @@
   "nav": {
     "home": "Principium",
     "docs": "Documenta",
+    "lofts": "Columbariae",
     "myLoft": "Columbarium Meum"
   },
   "landing": {
@@ -133,6 +134,10 @@
     "description": "Vector ad columbarium destinatum pervenit, sed nullum datagramma inventum est. Res petita non exsistit aut numquam transmissa est.",
     "section": "§7 — De Memoria Negativa et Semantica SERVFAIL",
     "back": "Ad columbarium principale redire"
+  },
+  "lofts": {
+    "title": "Index Columbariorum",
+    "loftsDiscovered": "columbariae detectae"
   },
   "footer": {
     "draft": "draft-cruzgonzalez-ipoac-dns",

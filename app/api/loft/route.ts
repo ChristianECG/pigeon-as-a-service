@@ -42,7 +42,7 @@ export async function POST(req: NextRequest) {
   return NextResponse.json(loft, { status: 201 });
 }
 
-// GET /api/loft?id= or /api/loft?lat=&lon=
+// GET /api/loft?id= or /api/loft?lat=&lon= or no params for all
 export async function GET(req: NextRequest) {
   const { searchParams } = req.nextUrl;
   const id = searchParams.get("id");
@@ -53,14 +53,21 @@ export async function GET(req: NextRequest) {
     return NextResponse.json(loft);
   }
 
-  const lat = parseFloat(searchParams.get("lat") ?? "");
-  const lon = parseFloat(searchParams.get("lon") ?? "");
+  const lat = searchParams.get("lat");
+  const lon = searchParams.get("lon");
 
-  if (isNaN(lat) || isNaN(lon)) {
-    return NextResponse.json({ error: "Provide id or lat/lon" }, { status: 400 });
+  if (lat && lon) {
+    const latNum = parseFloat(lat);
+    const lonNum = parseFloat(lon);
+    if (isNaN(latNum) || isNaN(lonNum)) {
+      return NextResponse.json({ error: "Invalid lat/lon" }, { status: 400 });
+    }
+    const loft = db.lofts.findByCoords(latNum, lonNum);
+    if (!loft) return NextResponse.json({ error: "Not found" }, { status: 404 });
+    return NextResponse.json(loft);
   }
 
-  const loft = db.lofts.findByCoords(lat, lon);
-  if (!loft) return NextResponse.json({ error: "Not found" }, { status: 404 });
-  return NextResponse.json(loft);
+  // No params: return all lofts
+  const allLofts = db.lofts.all();
+  return NextResponse.json({ lofts: allLofts });
 }

@@ -2,6 +2,7 @@
   "nav": {
     "home": "Home",
     "docs": "RFCs",
+    "lofts": "Lofts",
     "myLoft": "My Loft"
   },
   "landing": {
@@ -133,6 +134,10 @@
     "description": "The carrier arrived at the destination loft, but no datagram was found. The requested resource does not exist or was never transmitted.",
     "section": "§7 — Negative Caching and SERVFAIL Semantics",
     "back": "Return to home loft"
+  },
+  "lofts": {
+    "title": "Loft Directory",
+    "loftsDiscovered": "lofts discovered"
   },
   "footer": {
     "draft": "draft-cruzgonzalez-ipoac-dns",

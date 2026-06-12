@@ -36,6 +36,9 @@ export default function Nav() {
         <Link href="/docs" className="hover:text-[var(--foreground)] transition-colors">
           {t("docs")}
         </Link>
+        <Link href="/lofts" className="hover:text-[var(--foreground)] transition-colors">
+          {t("lofts")}
+        </Link>
         <Link
           href={loftHref ?? "/loft/new"}
           className="hover:text-[var(--foreground)] transition-colors"
