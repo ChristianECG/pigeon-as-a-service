@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "home": "Home",
+    "docs": "RFCs",
+    "myLoft": "My Loft"
+  },
+  "landing": {
+    "title": "RFC 1149",
+    "subtitle": "A Standard for the Transmission of IP Datagrams on Avian Carriers",
+    "description": "In 1990, a joke became a standard. In 2001, that standard beat ADSL. This is its reference implementation.",
+    "cta": "Claim your Loft",
+    "history": "Read the history",
+    "timeline": {
+      "rfc1149": "IP Datagrams on Avian Carriers",
+      "rfc2549": "With Quality of Service",
+      "bergen": "Real-world test beat ADSL",
+      "rfc6214": "IPv6 adaptation",
+      "doac": "DNS over Avian Carriers"
+    }
+  },
+  "loft": {
+    "yourAddress": "Your Loft",
+    "inbox": "Inbox",
+    "outbox": "Outbox",
+    "inFlight": "In flight",
+    "compose": "Send a message",
+    "noMessages": "No messages yet. Your loft is quiet.",
+    "carriersInFlight": "{count, plural, one {# carrier in flight} other {# carriers in flight}}",
+    "status": {
+      "in_flight": "In flight",
+      "delivered": "Delivered",
+      "nxpigeon": "NXPIGEON"
+    },
+    "eta": "ETA",
+    "distance": "Distance",
+    "wind": "Wind"
+  },
+  "compose": {
+    "title": "Compose message",
+    "subtitle": "Enter the destination loft coordinates or paste a loft URL.",
+    "destinationLabel": "Destination loft (lat, lon)",
+    "continue": "Continue →",
+    "invalidCoords": "Invalid coordinates. Format: 19.432608, -99.133209",
+    "shareHint": "Share your loft URL with others so they can send you a carrier. Their coordinates appear in the URL:",
+    "to": "To (Loft coordinates)",
+    "toPlaceholder": "19.432608,-99.133209",
+    "message": "Message",
+    "messagePlaceholder": "Write your datagram...",
+    "send": "Dispatch carrier",
+    "dispatching": "Dispatching carrier…",
+    "warning": "Estimated delivery: {eta}. Carrier cannot be recalled once dispatched.",
+    "loftNotFound": "Loft not found. Verify the coordinates.",
+    "resolvingDestination": "Resolving destination…",
+    "destinationFound": "✓ Destination loft found",
+    "noLoft": "You need a Loft before sending.",
+    "noLoftCta": "Establish one →"
+  },
+  "geolocation": {
+    "title": "Establish your Loft",
+    "description": "Your Loft is your address on the avian carrier network. It is permanent — save your URL.",
+    "useLocation": "Use my location",
+    "placeManually": "Place manually on map",
+    "clickToPlace": "Click anywhere on the map to place your Loft",
+    "locating": "Locating...",
+    "denied": "Location access denied. Place your Loft manually.",
+    "confirmLoft": "Establish Loft here",
+    "reposition": "Reposition",
+    "heading": "Preferred approach heading",
+    "altBand": "Altitude band",
+    "altBands": {
+      "0": "Low (below 100m AGL)",
+      "1": "Medium (100–300m AGL)",
+      "2": "High (above 300m AGL)",
+      "3": "Thermal (operator-defined)"
+    }
+  },
+  "pigeon": {
+    "title": "Carrier in flight",
+    "from": "From",
+    "to": "To",
+    "dispatched": "Dispatched",
+    "eta": "ETA",
+    "nxpigeon": "This carrier did not arrive. NXPIGEON.",
+    "delivered": "Delivered",
+    "datagram": "Datagram",
+    "timeline": {
+      "dispatched": "Carrier dispatched",
+      "arrived": "Carrier arrived",
+      "lost": "Carrier lost in transit",
+      "retransmitLimit": "retransmission limit reached (§6)",
+      "totalFlightTime": "total flight time {duration}",
+      "elapsed": "{duration} elapsed",
+      "positionElapsed": "current position {coords} · {duration} elapsed",
+      "eta": "in {duration}"
+    }
+  },
+  "docs": {
+    "title": "The RFC Family",
+    "subtitle": "Three decades of avian infrastructure standards",
+    "readDraft": "Read the draft",
+    "rfcs": {
+      "rfc1149": {
+        "title": "A Standard for the Transmission of IP Datagrams on Avian Carriers",
+        "status": "Experimental",
+        "summary": "The foundational document. Defines IP transmission over homing pigeons, including segment size (256 milligrams), maximum transmission unit, and error detection via examining the carrier."
+      },
+      "rfc2549": {
+        "title": "IP over Avian Carriers with Quality of Service",
+        "status": "Experimental",
+        "summary": "Extends RFC 1149 with QoS markings. Defines differentiated services for avian transport: priority traffic may be carried by faster birds (swifts); low-priority traffic by slower species."
+      },
+      "bergen": {
+        "number": "Bergen, Norway",
+        "title": "Real-world implementation",
+        "status": "Historical",
+        "summary": "The Bergen Linux User Group implemented RFC 1149 in practice. Nine packets were sent. Ping response time: 3,000–6,000 seconds. Packet loss: 55%. The surviving pigeons beat the local ADSL connection in effective throughput."
+      },
+      "rfc6214": {
+        "title": "Adaptation of RFC 1149 for IPv6",
+        "status": "Informational",
+        "summary": "Updates RFC 1149 for IPv6. Notes that the increased address space (128 bits) requires larger leg bands. Recommends using longer-lived bird species for addresses with low TTL."
+      },
+      "doac": {
+        "title": "DNS over Avian Carriers",
+        "status": "Internet-Draft",
+        "summary": "The missing piece: how does a host on an avian-carrier network resolve a hostname? Defines the AA resource record, the Pigeon of Last Resort (PoLR), and retransmission behavior. Threat model includes Hawk-in-the-Middle (HitM) attacks and the Hungry Cat as a physical layer threat."
+      }
+    }
+  },
+  "notFound": {
+    "code": "404",
+    "title": "NXPIGEON",
+    "description": "The carrier arrived at the destination loft, but no datagram was found. The requested resource does not exist or was never transmitted.",
+    "section": "§7 — Negative Caching and SERVFAIL Semantics",
+    "back": "Return to home loft"
+  },
+  "footer": {
+    "draft": "draft-cruzgonzalez-ipoac-dns",
+    "dataLabel": "Data:"
+  }
+}

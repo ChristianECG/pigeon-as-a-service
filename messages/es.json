@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "docs": "RFCs",
+    "myLoft": "Mi Palomar"
+  },
+  "landing": {
+    "title": "RFC 1149",
+    "subtitle": "Un Estándar para la Transmisión de Datagramas IP sobre Portadores Aviares",
+    "description": "En 1990, una broma se convirtió en estándar. En 2001, ese estándar le ganó al ADSL. Esta es su implementación de referencia.",
+    "cta": "Reclamar mi palomar",
+    "history": "Leer la historia",
+    "timeline": {
+      "rfc1149": "Datagramas IP sobre Portadores Aviares",
+      "rfc2549": "Con Calidad de Servicio",
+      "bergen": "Implementación real superó al ADSL",
+      "rfc6214": "Adaptación para IPv6",
+      "doac": "DNS sobre Portadores Aviares"
+    }
+  },
+  "loft": {
+    "yourAddress": "Tu Palomar",
+    "inbox": "Recibidos",
+    "outbox": "Enviados",
+    "inFlight": "En vuelo",
+    "compose": "Enviar mensaje",
+    "noMessages": "Sin mensajes aún. Tu palomar está en silencio.",
+    "carriersInFlight": "{count, plural, one {# portador en vuelo} other {# portadores en vuelo}}",
+    "status": {
+      "in_flight": "En vuelo",
+      "delivered": "Entregado",
+      "nxpigeon": "NXPALOMA"
+    },
+    "eta": "ETA",
+    "distance": "Distancia",
+    "wind": "Viento"
+  },
+  "compose": {
+    "title": "Redactar mensaje",
+    "subtitle": "Ingresa las coordenadas del palomar destino o pega una URL de palomar.",
+    "destinationLabel": "Palomar destino (lat, lon)",
+    "continue": "Continuar →",
+    "invalidCoords": "Coordenadas inválidas. Formato: 19.432608, -99.133209",
+    "shareHint": "Comparte tu URL de palomar para que otros puedan enviarte portadores. Sus coordenadas aparecen en la URL:",
+    "to": "Para (coordenadas del palomar)",
+    "toPlaceholder": "19.432608,-99.133209",
+    "message": "Mensaje",
+    "messagePlaceholder": "Escribe tu datagrama...",
+    "send": "Despachar portador",
+    "dispatching": "Despachando portador…",
+    "warning": "Entrega estimada: {eta}. El portador no puede ser revocado una vez despachado.",
+    "loftNotFound": "Palomar no encontrado. Verifica las coordenadas.",
+    "resolvingDestination": "Resolviendo destino…",
+    "destinationFound": "✓ Palomar destino encontrado",
+    "noLoft": "Necesitas un palomar antes de enviar.",
+    "noLoftCta": "Establecer uno →"
+  },
+  "geolocation": {
+    "title": "Establece tu Palomar",
+    "description": "Tu palomar es tu dirección en la red de portadores aviares. Es permanente — guarda tu URL.",
+    "useLocation": "Usar mi ubicación",
+    "placeManually": "Colocar manualmente en el mapa",
+    "clickToPlace": "Haz clic en cualquier lugar del mapa para colocar tu palomar",
+    "locating": "Localizando...",
+    "denied": "Acceso a ubicación denegado. Coloca tu palomar manualmente.",
+    "confirmLoft": "Establecer palomar aquí",
+    "reposition": "Reposicionar",
+    "heading": "Rumbo preferido de aproximación",
+    "altBand": "Banda de altitud",
+    "altBands": {
+      "0": "Baja (menos de 100m AGL)",
+      "1": "Media (100–300m AGL)",
+      "2": "Alta (más de 300m AGL)",
+      "3": "Térmica (definida por operador)"
+    }
+  },
+  "pigeon": {
+    "title": "Portador en vuelo",
+    "from": "De",
+    "to": "Para",
+    "dispatched": "Despachado",
+    "eta": "ETA",
+    "nxpigeon": "Este portador no llegó. NXPALOMA.",
+    "delivered": "Entregado",
+    "datagram": "Datagrama",
+    "timeline": {
+      "dispatched": "Portador despachado",
+      "arrived": "Portador llegó",
+      "lost": "Portador perdido en tránsito",
+      "retransmitLimit": "límite de retransmisión alcanzado (§6)",
+      "totalFlightTime": "tiempo total de vuelo {duration}",
+      "elapsed": "{duration} transcurrido",
+      "positionElapsed": "posición actual {coords} · {duration} transcurrido",
+      "eta": "en {duration}"
+    }
+  },
+  "docs": {
+    "title": "La Familia RFC",
+    "subtitle": "Tres décadas de estándares de infraestructura aviar",
+    "readDraft": "Leer el borrador",
+    "rfcs": {
+      "rfc1149": {
+        "title": "Un Estándar para la Transmisión de Datagramas IP sobre Portadores Aviares",
+        "status": "Experimental",
+        "summary": "El documento fundacional. Define la transmisión IP sobre palomas mensajeras, incluyendo el tamaño de segmento (256 miligramos), la unidad máxima de transmisión y la detección de errores mediante inspección del portador."
+      },
+      "rfc2549": {
+        "title": "IP sobre Portadores Aviares con Calidad de Servicio",
+        "status": "Experimental",
+        "summary": "Extiende RFC 1149 con marcadores QoS. Define servicios diferenciados para transporte aviar: el tráfico prioritario puede ser transportado por aves más rápidas (vencejos); el tráfico de baja prioridad por especies más lentas."
+      },
+      "bergen": {
+        "number": "Bergen, Noruega",
+        "title": "Implementación en el mundo real",
+        "status": "Histórico",
+        "summary": "El Bergen Linux User Group implementó RFC 1149 en la práctica. Se enviaron nueve paquetes. Tiempo de respuesta ping: 3.000–6.000 segundos. Pérdida de paquetes: 55%. Las palomas sobrevivientes superaron la conexión ADSL local en rendimiento efectivo."
+      },
+      "rfc6214": {
+        "title": "Adaptación de RFC 1149 para IPv6",
+        "status": "Informativo",
+        "summary": "Actualiza RFC 1149 para IPv6. Señala que el espacio de direcciones ampliado (128 bits) requiere bandas de pata más grandes. Recomienda usar especies de aves de mayor longevidad para direcciones con TTL bajo."
+      },
+      "doac": {
+        "title": "DNS sobre Portadores Aviares",
+        "status": "Borrador de Internet",
+        "summary": "La pieza faltante: ¿cómo resuelve un host en una red de portadores aviares un nombre de host? Define el registro de recurso AA, la Paloma de Último Recurso (PoLR) y el comportamiento de retransmisión. El modelo de amenazas incluye ataques Halcón-en-el-Medio (HitM) y el Gato Hambriento como amenaza de capa física."
+      }
+    }
+  },
+  "notFound": {
+    "code": "404",
+    "title": "NXPALOMA",
+    "description": "El portador llegó al palomar de destino, pero no se encontró ningún datagrama. El recurso solicitado no existe o nunca fue transmitido.",
+    "section": "§7 — Caché Negativo y Semántica de SERVFAIL",
+    "back": "Volver al palomar principal"
+  },
+  "footer": {
+    "draft": "draft-cruzgonzalez-ipoac-dns",
+    "dataLabel": "Datos:"
+  }
+}

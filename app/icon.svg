@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#0a0a0a"/>
+  <!-- Feather vane: leaf shape from bottom-left to upper-right -->
+  <path d="M5,28 Q6,18 14,10 Q22,4 27,5 Q28,10 22,16 Q16,22 8,27 Z" fill="#c8a97e"/>
+  <!-- Rachis / central shaft -->
+  <path d="M5,28 Q14,16 27,5" stroke="#0a0a0a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Quill tip below the vane -->
+  <path d="M5,28 L3,31" stroke="#c8a97e" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

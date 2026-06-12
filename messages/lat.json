@@ -1,0 +1,141 @@
+{
+  "nav": {
+    "home": "Principium",
+    "docs": "Documenta",
+    "myLoft": "Columbarium Meum"
+  },
+  "landing": {
+    "title": "RFC 1149",
+    "subtitle": "Norma pro Transmissione Datagrammatum IP per Vectores Aviarios",
+    "description": "Anno MCMXC, iocus norma factus est. Anno MMI, haec norma ADSL vicit. Haec est eius exsecutio.",
+    "cta": "Columbarium accipere",
+    "history": "Historiam legere",
+    "timeline": {
+      "rfc1149": "Datagrammata IP per Vectores Aviarios",
+      "rfc2549": "Cum Qualitate Servitii",
+      "bergen": "Exsecutio vera ADSL vicit",
+      "rfc6214": "Accommodatio ad IPv6",
+      "doac": "DNS per Vectores Aviarios"
+    }
+  },
+  "loft": {
+    "yourAddress": "Columbarium Tuum",
+    "inbox": "Accepta",
+    "outbox": "Missa",
+    "inFlight": "In Volatu",
+    "compose": "Nuntium mittere",
+    "noMessages": "Nulla nuntia adhuc. Columbarium tuum silentium tenet.",
+    "carriersInFlight": "{count, plural, one {# vector in volatu} other {# vectores in volatu}}",
+    "status": {
+      "in_flight": "In volatu",
+      "delivered": "Traditum",
+      "nxpigeon": "NXCOLUMBA"
+    },
+    "eta": "ETA",
+    "distance": "Distantia",
+    "wind": "Ventus"
+  },
+  "compose": {
+    "title": "Nuntium componere",
+    "subtitle": "Coordinatas columbarii destinati ingere aut URL columbarii insere.",
+    "destinationLabel": "Columbarium destinatum (lat, lon)",
+    "continue": "Pergere →",
+    "invalidCoords": "Coordinatae invalidae. Forma: 19.432608, -99.133209",
+    "shareHint": "URL columbarii tui cum aliis communica ut vectores ad te mittere possint. Coordinatae eorum in URL apparent:",
+    "to": "Ad (coordinatae columbarii)",
+    "toPlaceholder": "19.432608,-99.133209",
+    "message": "Nuntius",
+    "messagePlaceholder": "Datagramma tuum scribe...",
+    "send": "Vectorem dimittere",
+    "dispatching": "Vectorem dimittendo…",
+    "warning": "Traditio aestimata: {eta}. Vector revocari non potest semel dimissus.",
+    "loftNotFound": "Columbarium non inventum. Coordinatas verifica.",
+    "resolvingDestination": "Destinationem solvendo…",
+    "destinationFound": "✓ Columbarium destinatum inventum",
+    "noLoft": "Columbarium tibi opus est antequam mittis.",
+    "noLoftCta": "Constituere →"
+  },
+  "geolocation": {
+    "title": "Columbarium tuum constitue",
+    "description": "Columbarium tuum est inscriptio tua in rete vectorum aviariorum. Permanens est — URL tuam serva.",
+    "useLocation": "Locum meum uti",
+    "placeManually": "In tabula manualiter ponere",
+    "clickToPlace": "Ubique in tabula stinge ad columbarium ponendum",
+    "locating": "Locando...",
+    "denied": "Accessus ad locum negatus. Columbarium manualiter pone.",
+    "confirmLoft": "Columbarium hic constituere",
+    "reposition": "Reponere",
+    "heading": "Cursus accessus praeferendus",
+    "altBand": "Zona altitudinis",
+    "altBands": {
+      "0": "Humilis (infra 100m AGL)",
+      "1": "Media (100–300m AGL)",
+      "2": "Alta (supra 300m AGL)",
+      "3": "Thermalis (ab operatore definita)"
+    }
+  },
+  "pigeon": {
+    "title": "Vector in volatu",
+    "from": "A",
+    "to": "Ad",
+    "dispatched": "Dimissus",
+    "eta": "ETA",
+    "nxpigeon": "Hic vector non pervenit. NXCOLUMBA.",
+    "delivered": "Traditum",
+    "datagram": "Datagramma",
+    "timeline": {
+      "dispatched": "Vector dimissus",
+      "arrived": "Vector pervenit",
+      "lost": "Vector in transitu perditus",
+      "retransmitLimit": "limes retransmissionis attactus (§6)",
+      "totalFlightTime": "tempus totale volatus {duration}",
+      "elapsed": "{duration} transivit",
+      "positionElapsed": "positio praesens {coords} · {duration} transivit",
+      "eta": "in {duration}"
+    }
+  },
+  "docs": {
+    "title": "Familia RFC",
+    "subtitle": "Tria decennia normarum infrastructurae aviriae",
+    "readDraft": "Scriptum legere",
+    "rfcs": {
+      "rfc1149": {
+        "title": "Norma pro Transmissione Datagrammatum IP per Vectores Aviarios",
+        "status": "Experimentalis",
+        "summary": "Documentum fundamentale. Definit transmissionem IP per columbas tabellarias, includendo magnitudinem segmenti (256 milligramma), unitatem maximam transmissionis et detectionem errorum per inspectionem vectoris."
+      },
+      "rfc2549": {
+        "title": "IP per Vectores Aviarios cum Qualitate Servitii",
+        "status": "Experimentalis",
+        "summary": "RFC 1149 notationes QoS addit. Definit servitia distincta pro transporte aviario: negotium prioritarium per aves celeriores (apodes) vehi potest; negotium minoris prioritatis per species tardiores."
+      },
+      "bergen": {
+        "number": "Bergae, Norvegia",
+        "title": "Exsecutio in mundo vero",
+        "status": "Historicum",
+        "summary": "Coetus Linuxiensis Bergensis RFC 1149 in praxi exsecutus est. Novem fasciculi missi sunt. Tempus responsionis ping: 3.000–6.000 secundae. Amissio fasciculorum: 55%. Columbae superstites nexum ADSL localem in efficacia superaverunt."
+      },
+      "rfc6214": {
+        "title": "Accommodatio RFC 1149 ad IPv6",
+        "status": "Informativum",
+        "summary": "RFC 1149 ad IPv6 renovat. Notat spatium inscriptionum auctum (128 frusta) anulos maiores crurum requirere. Suadet species avium diutius viventium adhiberi pro inscriptionibus cum TTL brevi."
+      },
+      "doac": {
+        "title": "DNS per Vectores Aviarios",
+        "status": "Compilatio Interretialis",
+        "summary": "Pars desiderata: quomodo nomen computatrale solvitur in rete vectorum aviariorum? Definit tabulam resourceum AA, Columbam Ultimae Sortis (PoLR) et modos retransmissionis. Modellum minarum includit oppugnationes Accipitrem-in-Medio (HitM) et Felem Esurientem ut minas stratis physicis."
+      }
+    }
+  },
+  "notFound": {
+    "code": "404",
+    "title": "NXCOLUMBA",
+    "description": "Vector ad columbarium destinatum pervenit, sed nullum datagramma inventum est. Res petita non exsistit aut numquam transmissa est.",
+    "section": "§7 — De Memoria Negativa et Semantica SERVFAIL",
+    "back": "Ad columbarium principale redire"
+  },
+  "footer": {
+    "draft": "draft-cruzgonzalez-ipoac-dns",
+    "dataLabel": "Data:"
+  }
+}
